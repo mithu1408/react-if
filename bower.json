@@ -1,14 +1,15 @@
 {
-  "name": "react-if",
-  "version": "2.2.1",
+  "name": "react-conditional",
+  "version": "1.0.0",
   "authors": [
-    "Romain Ruetschi <romain.ruetschi@gmail.com>"
+    "Muhammad Towfique Imam <mithu1408@gmail.com>"
   ],
   "description": "A React component to render other components conditionally.",
-  "main": "lib/ReactIf.js",
+  "main": "lib/ReactConditional.js",
   "moduleType": "node",
   "keywords": [
     "react",
+    "conditional",
     "react-component"
   ],
   "license": "MIT",
@@ -28,6 +29,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/romac/react-if.git"
+    "url": "git://github.com/muhammad-towfique-imam/react-conditional.git"
   }
 }

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>React If demo</title>
+    <title>React Conditional demo</title>
     <script src="https://fb.me/react-0.14.6.js"></script>
     <script src="https://fb.me/react-dom-0.14.6.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="../lib/ReactIf.js"></script>
+    <script src="../lib/ReactConditional.js"></script>
   </head>
   <body>
     <div id="example"></div>
     <script type="text/babel">
-      const { If, Then, Else } = ReactIf;
+      const { Conditional, If, Else } = ReactConditional;
 
       const Beer = React.createClass({
 
@@ -23,14 +23,14 @@
         render() {
           return (
             <div id="some-id">
-              <If condition={ this.props.age >= this.props.drinkingAge }>
-                <Then><span>Have a beer, {this.props.name}!</span></Then>
+              <Conditional>
+                <If condition={ this.props.age >= this.props.drinkingAge }><span>Have a beer, {this.props.name}!</span></If>
                 <Else>
                   {() => {
                     return <span>Sorry, {this.props.name}, you are not old enough.</span>
                   }}
                 </Else>
-              </If>
+              </Conditional>
             </div>
           );
         }
@@ -38,7 +38,7 @@
       });
 
       ReactDOM.render(
-        <Beer age={23} name="Romac" />,
+        <Beer age={34} name="Towfique" />,
         document.getElementById('example')
       );
     </script>

@@ -19,7 +19,7 @@
     "react-dom": ">=15.5.0",
     "react-test-renderer": "^15.6.1"
   },
-  "main": "lib/ReactIf.js",
+  "main": "lib/ReactConditional.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "watch": "babel -w src --out-dir lib",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/romac/react-if.git"
+    "url": "https://github.com/muhammad-towfique-imam/react-conditional.git"
   },
   "keywords": [
     "react",
@@ -35,10 +35,10 @@
     "if",
     "conditional"
   ],
-  "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
+  "author": "Muhammad Towfique Imam <mithu1408@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/romac/react-if/issues"
+    "url": "https://github.com/muhammad-towfique-imam/react-conditional/issues"
   },
-  "homepage": "https://github.com/romac/react-if"
+  "homepage": "https://github.com/muhammad-towfique-imam/react-conditional"
 }
