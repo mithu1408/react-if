@@ -65,5 +65,5 @@ Must only contain a single child, which it renders as-is. Should not be used out
 
 ## License
 
-**React Conditional** is released under the [MIT license](http://romac.mit-license.org).
+**Conditional React Component** is released under the [MIT license](http://romac.mit-license.org).
 
