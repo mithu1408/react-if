@@ -10,37 +10,40 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
-      const { Conditional, If, Else } = ReactConditional;
+      const { Conditional, If, Else } = ReactConditional
 
-      const Beer = React.createClass({
+      const NumberText = React.createClass({
 
         getDefaultProps() {
           return {
-            drinkingAge: 16 // Yay, Switzerland!
-          };
+            value: -13
+          }
         },
 
         render() {
           return (
-            <div id="some-id">
-              <Conditional>
-                <If condition={ this.props.age >= this.props.drinkingAge }><span>Have a beer, {this.props.name}!</span></If>
-                <Else>
-                  {() => {
-                    return <span>Sorry, {this.props.name}, you are not old enough.</span>
-                  }}
-                </Else>
-              </Conditional>
-            </div>
-          );
+              <div>
+                  <Conditional>
+                      <If condition={ this.props.value < 0 }>
+                          <span>Negative</span>
+                      </If>
+                      <If condition={ this.props.value > 0 }>
+                          <span>Positive</span>
+                      </If>
+                      <Else>
+                        <span>Zero</span>
+                      </Else>
+                  </If>
+              </div>
+          )
         }
 
-      });
+      })
 
       ReactDOM.render(
-        <Beer age={34} name="Towfique" />,
+        <NumberText value={13} />,
         document.getElementById('example')
-      );
+      )
     </script>
   </body>
 </html>

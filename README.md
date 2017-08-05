@@ -17,8 +17,8 @@ Render react components conditionally.
 ## Example
 
 ```javascript
-import React from 'react';
-import { Conditional, If, Else } from 'react-conditional';
+import React from 'react'
+import { Conditional, If, Else } from 'react-conditional'
 
 class NumberText extends React.Component {
     render() {
@@ -38,11 +38,15 @@ class NumberText extends React.Component {
             </div>
         );
     }
-});
+})
 ```
 
 
 ## API
+
+### &lt;Conditional /&gt;
+
+The parent container element
 
 ### &lt;If /&gt;
 
@@ -54,7 +58,6 @@ If `condition` evaluates to `true`, then `<If />` block will be rendered, otherw
 
 This component can contain multiple number of `<If />` blocks, the first block that evaluates to `true` will be rendered. If no `<If />` block evaluates to `true`, then `<Else />` block will be rendered.
 
-### &lt;If /&gt;
 Must contain only a single child, which it renders as-is. Should not be used outside of a `<Conditional />` block.
 
 ### &lt;Else /&gt;
