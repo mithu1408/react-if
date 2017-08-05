@@ -1,7 +1,7 @@
 
 # React Conditional
 
-Render React components conditionally.
+Render react components conditionally.
 
 ## Install
 
@@ -20,25 +20,24 @@ Render React components conditionally.
 import React from 'react';
 import { Conditional, If, Else } from 'react-conditional';
 
-class Beer extends React.Component {
-
+class NumberText extends React.Component {
     render() {
         return (
             <div>
                 <Conditional>
-                    <If condition={ this.props.age >= 16 }>
-                        Have a beer, {this.props.name}!
+                    <If condition={ this.props.value < 0 }>
+                        <span>Negative</span>
+                    </If>
+                    <If condition={ this.props.value > 0 }>
+                        <span>Positive</span>
                     </If>
                     <Else>
-                    {() => // will only be evaluated if the condition fails.
-                       <span>Sorry, {this.props.name}, you are not old enough.</span>
-                    }
+                       <span>Zero</span>
                     </Else>
                 </If>
             </div>
         );
     }
-
 });
 ```
 
@@ -51,9 +50,9 @@ class Beer extends React.Component {
 | ------------- | ------- |
 | `condition`   | Boolean |
 
-If `condition` evaluates to `true`, the `<If />` block will be rendered, otherwise the `<Else />` block will be rendered.
+If `condition` evaluates to `true`, then `<If />` block will be rendered, otherwise the `<Else />` block will be rendered.
 
-This component can contain multiple number of `<If />` blocks, the first block that evaluates to `true` will be rendered. If no `<If />` block evaluates to `true`, the `<Else />` block will be rendered.
+This component can contain multiple number of `<If />` blocks, the first block that evaluates to `true` will be rendered. If no `<If />` block evaluates to `true`, then `<Else />` block will be rendered.
 
 ### &lt;If /&gt;
 Must contain only a single child, which it renders as-is. Should not be used outside of a `<Conditional />` block.
