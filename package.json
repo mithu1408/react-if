@@ -1,6 +1,6 @@
 {
   "name": "conditional-react-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "prop-types": ">=15.5.10",
     "react": ">=15.5.0"
