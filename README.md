@@ -41,6 +41,23 @@ class NumberText extends React.Component {
 })
 ```
 
+```javascript
+import React from 'react'
+import { Conditional, If, Else } from 'conditional-react-component'
+
+class PositiveNumberText extends React.Component {
+    render() {
+        return (
+            <div>
+                <If condition={ this.props.value > 0 }>
+                    <span>Positive</span>
+                </If>
+            </div>
+        );
+    }
+})
+```
+
 
 ## API
 
