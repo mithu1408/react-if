@@ -9,7 +9,7 @@ global.window = doc.defaultView
 
 import { Conditional, If, Else } from '../src/ReactConditional'
 
-describe("react-conditional", function(){
+describe("conditional-react-component", function(){
 	context("<If /> element with true condition", function(){
 		it("should render the child element of <If />", function(){
 			const wrapper = mount(

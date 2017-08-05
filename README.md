@@ -1,5 +1,5 @@
 
-# React Conditional
+# Conditional React Component
 
 Render react components conditionally.
 
@@ -7,18 +7,18 @@ Render react components conditionally.
 
 ### NPM:
 
-    npm install react-conditional
+    npm install conditional-react-component
 
 ### Bower:
 
-    bower install react-conditional
+    bower install conditional-react-component
 
 
 ## Example
 
 ```javascript
 import React from 'react'
-import { Conditional, If, Else } from 'react-conditional'
+import { Conditional, If, Else } from 'conditional-react-component'
 
 class NumberText extends React.Component {
     render() {

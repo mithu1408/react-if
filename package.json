@@ -1,5 +1,5 @@
 {
-  "name": "react-conditional",
+  "name": "conditional-react-component",
   "version": "1.0.0",
   "peerDependencies": {
     "prop-types": ">=15.5.10",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/muhammad-towfique-imam/react-conditional.git"
+    "url": "https://github.com/muhammad-towfique-imam/conditional-react-component.git"
   },
   "keywords": [
     "react",
@@ -38,7 +38,7 @@
   "author": "Muhammad Towfique Imam <mithu1408@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/muhammad-towfique-imam/react-conditional/issues"
+    "url": "https://github.com/muhammad-towfique-imam/conditional-react-component/issues"
   },
-  "homepage": "https://github.com/muhammad-towfique-imam/react-conditional"
+  "homepage": "https://github.com/muhammad-towfique-imam/conditional-react-component"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "react-conditional",
+  "name": "conditional-react-component",
   "version": "1.0.0",
   "authors": [
     "Muhammad Towfique Imam <mithu1408@gmail.com>"
@@ -29,6 +29,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/muhammad-towfique-imam/react-conditional.git"
+    "url": "git://github.com/muhammad-towfique-imam/conditional-react-component.git"
   }
 }
