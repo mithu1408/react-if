@@ -78,7 +78,7 @@ This component can contain multiple number of `<If />` blocks, the first block t
 Must contain only a single child, which it renders as-is. Should not be used outside of a `<Conditional />` block.
 
 ### &lt;Else /&gt;
-Must only contain a single child, which it renders as-is. Should not be used outside of a `<Conditional />` block.
+Must only contain a single child, which it renders as-is. Can be used outside of a `<Conditional />` block.
 
 ## License
 
