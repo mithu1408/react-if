@@ -11,7 +11,7 @@ import { Conditional, If, Else } from '../src/ReactConditional'
 
 describe("conditional-react-component", function(){
 	context("<If /> element with true condition", function(){
-		it("should render the child element of <If />", function(){
+		it("Should render the child element of <If />", function(){
 			const wrapper = mount(
 				<Conditional>
 					<If condition={true}>
@@ -22,7 +22,7 @@ describe("conditional-react-component", function(){
 			expect(wrapper.containsMatchingElement(<div>If</div>)).to.equal(true)
 		})
 
-		it("should not render the child element of <Else />", function(){
+		it("Should not render the child element of <Else />", function(){
 			const wrapper = mount(
 				<Conditional>
 					<If condition={true}>
@@ -36,33 +36,40 @@ describe("conditional-react-component", function(){
 			expect(wrapper.containsMatchingElement(<div>Else</div>)).to.equal(false)
 		})
 
-		context("multiple <If /> blocks", function(){
-			it("should only render the child element of the first <If /> block with true condition", function(){
-				const wrapper = mount(
-					<Conditional>
-						<If condition={false}>
-							<div>If1</div>
-						</If>
-						<If condition={true}>
-							<div>If2</div>
-						</If>
-						<If condition={true}>
-							<div>If3</div>
-						</If>
-						<Else>
-							<div>Else</div>
-						</Else>
-					</Conditional>
-				)
-				expect(wrapper.containsMatchingElement(<div>If1</div>)).to.equal(false)
-				expect(wrapper.containsMatchingElement(<div>If2</div>)).to.equal(true)
-				expect(wrapper.containsMatchingElement(<div>If3</div>)).to.equal(false)
-			})
+		it("Should only render the child element of the first <If /> block with true condition", function(){
+			const wrapper = mount(
+				<Conditional>
+					<If condition={false}>
+						<div>If1</div>
+					</If>
+					<If condition={true}>
+						<div>If2</div>
+					</If>
+					<If condition={true}>
+						<div>If3</div>
+					</If>
+					<Else>
+						<div>Else</div>
+					</Else>
+				</Conditional>
+			)
+			expect(wrapper.containsMatchingElement(<div>If1</div>)).to.equal(false)
+			expect(wrapper.containsMatchingElement(<div>If2</div>)).to.equal(true)
+			expect(wrapper.containsMatchingElement(<div>If3</div>)).to.equal(false)
+		})
+
+		it("<If /> block without <Conditional /> block", function(){
+			const wrapper = mount(
+				<If condition={true}>
+					<div>If</div>
+				</If>
+			)
+			expect(wrapper.containsMatchingElement(<div>If</div>)).to.equal(true)
 		})
 	})
 
 	context("<If /> element with false condition", function(){
-		it("should not render the child element of  <If />", function(){
+		it("Should not render the child element of  <If />", function(){
 			const wrapper = mount(
 				<Conditional>
 					<If condition={false}>
@@ -73,7 +80,7 @@ describe("conditional-react-component", function(){
 			expect(wrapper.containsMatchingElement(<div>If</div>)).to.equal(false)
 		})
 
-		it("should render the child element of <Else />", function(){
+		it("Should render the child element of <Else />", function(){
 			const wrapper = mount(
 				<Conditional>
 					<If condition={false}>

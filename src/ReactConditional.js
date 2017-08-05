@@ -10,7 +10,9 @@ function render (props) {
 }
 
 export function If (props) {
-  return render(props)
+  if (props.condition) {
+   return render(props)
+  }
 }
 
 export function Else (props) {
@@ -47,8 +49,7 @@ const IfOrElse = PropTypes.oneOfType([
   PropTypes.instanceOf(Else)
 ])
 
-If.propTypes = {
-  condition: PropTypes.bool.isRequired,
+Conditional.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(IfOrElse),
     IfOrElse
